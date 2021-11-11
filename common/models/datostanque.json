@@ -1,0 +1,45 @@
+{
+  "name": "datostanque",
+  "plural": "datostanque",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "Fecha": {
+      "type": "date",
+      "required": true
+    },
+    "NivelM3": {
+      "type": "number",
+      "required": true
+    },
+    "API": {
+      "type": "number",
+      "required": true
+    },
+    "Temp": {
+      "type": "number",
+      "required": true
+    },
+    "idTanque": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

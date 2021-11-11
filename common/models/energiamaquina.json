@@ -1,0 +1,44 @@
+{
+  "name": "energiamaquina",
+  "plural": "energiamaquina",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "idTag": {
+      "type": "number"
+    },
+    "idMaquina": {
+      "type": "number"
+    },
+    "Promedio": {
+      "type": "number"
+    },
+    "Maximo": {
+      "type": "number"
+    },
+    "Minimo": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

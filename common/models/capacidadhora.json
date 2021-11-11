@@ -1,0 +1,45 @@
+{
+  "name": "capacidadhora",
+  "plural": "capacidadhora",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "capproyectada": {
+      "type": "number",
+      "required": true
+    },
+    "capdeclarada": {
+      "type": "number",
+      "required": true
+    },
+    "observacion": {
+      "type": "string",
+      "required": true
+    },
+    "respaldo": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

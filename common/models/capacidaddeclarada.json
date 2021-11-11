@@ -1,0 +1,43 @@
+{
+  "name": "capacidaddeclarada",
+  "plural": "capacidaddeclarada",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Hora": {
+      "type": "number"
+    },
+    "Valor": {
+      "type": "number"
+    },
+    "idAllTags": {
+      "type": "number"
+    },
+    "idTag": {
+      "type": "number"
+    },
+    "idMaquina": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,44 @@
+{
+  "name": "datosptermica",
+  "plural": "datosptermica",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "neta": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "ppa": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "maxima": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

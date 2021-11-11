@@ -1,0 +1,53 @@
+{
+  "name": "datosbooster",
+  "plural": "datosbooster",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "actualm3": {
+      "type": "number",
+      "required": true
+    },
+    "antm3": {
+      "type": "number",
+      "required": true
+    },
+    "api": {
+      "type": "number",
+      "required": true
+    },
+    "temp": {
+      "type": "number",
+      "required": true
+    },
+    "densidad": {
+      "type": "number",
+      "required": true
+    },
+    "idBooster": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "datos",
+  "plural": "datos",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "Fecha": {
+      "type": "date",
+      "required": true
+    },
+    "Valor": {
+      "type": "number",
+      "required": true
+    },
+    "idAllTags": {
+      "type": "number",
+      "required": true
+    },
+    "idTag": {
+      "type": "number",
+      "required": true
+    },
+    "idMaquina": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,46 @@
+{
+  "name": "tagbymaquina",
+  "plural": "tagbymaquina",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Promedio": {
+      "type": "number"
+    },
+    "Min": {
+      "type": "number"
+    },
+    "Max": {
+      "type": "number"
+    },
+    "idTag": {
+      "type": "number"
+    },
+    "TagName": {
+      "type": "string"
+    },
+    "idMaquina": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

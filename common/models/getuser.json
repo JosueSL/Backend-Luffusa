@@ -1,0 +1,70 @@
+{
+  "name": "getuser",
+  "plural": "getuser",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "nombrecompleto": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "idcargo": {
+      "type": "number"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "iduser": {
+      "type": "number"
+    },
+    "idtipousuario": {
+      "type": "number"
+    },
+    "activo": {
+      "type": "number"
+    },
+    "idUS": {
+      "type": "number"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "idUT": {
+      "type": "number"
+    },
+    "descripcion": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

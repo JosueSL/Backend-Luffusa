@@ -1,0 +1,69 @@
+{
+  "name": "transferencia",
+  "plural": "transferencia",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "responsable": {
+      "type": "number",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "temp": {
+      "type": "number",
+      "required": true
+    },
+    "api": {
+      "type": "number",
+      "required": true
+    },
+    "nivInicioPAB901": {
+      "type": "number",
+      "required": true
+    },
+    "nivFinPAB901": {
+      "type": "number",
+      "required": true
+    },
+    "nivInicioPAB902": {
+      "type": "number",
+      "required": true
+    },
+    "nivFinPAB902": {
+      "type": "number",
+      "required": true
+    },
+    "nivInicioPV2": {
+      "type": "number",
+      "required": true
+    },
+    "nivFinPV2": {
+      "type": "number",
+      "required": true
+    },
+    "idcombustible": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

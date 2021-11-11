@@ -1,0 +1,54 @@
+{
+  "name": "nivelaceite",
+  "plural": "nivelaceite",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "recibido": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "despachado": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "consumido": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "medidor": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+        "reingreso": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

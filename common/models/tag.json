@@ -1,0 +1,57 @@
+{
+  "name": "tag",
+  "plural": "tag",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "CodInicio": {
+      "type": "string",
+      "required": true
+    },
+    "CodFin": {
+      "type": "string",
+      "required": true
+    },
+    "Codigo": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "string",
+      "default": "'N/A'"
+    },
+    "Activo": {
+      "type": "boolean",
+      "required": true
+    },
+    "Common": {
+      "type": "number",
+      "required": true
+    },
+    "Entidad": {
+      "type": "string",
+      "required": true
+    },
+    "idUnidad": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

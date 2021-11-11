@@ -1,0 +1,43 @@
+{
+  "db": {
+    "host": "192.168.0.10",
+    "port": 3306,
+    "url": "",
+    "database": "dblufussa",
+    "password": "admin",
+    "name": "db",
+    "user": "admin",
+    "connector": "mysql",
+    "timeout": 200000
+  },
+  "SQL": {
+    "host": "192.168.0.10",
+    "port": 1433,
+    "url": "",
+    "database": "ION_Data",
+    "password": "control1*",
+    "name": "SQL",
+    "user": "sa",
+    "connector": "mssql",
+    "pool": {
+      "max": 10,
+      "min": 0,
+      "idleTimeoutMillis": 30000
+    }
+  },
+  "alarm": {
+    "host": "192.168.0.128",
+    "port": 1433,
+    "url": "",
+    "database": "WWALMDB",
+    "password": "control1*",
+    "name": "alarm",
+    "user": "sa",
+    "connector": "mssql",
+    "pool": {
+      "max": 10,
+      "min": 0,
+      "idleTimeoutMillis": 30000
+    }
+  }
+}

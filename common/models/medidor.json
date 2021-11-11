@@ -1,0 +1,49 @@
+{
+  "name": "medidor",
+  "plural": "medidor",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "ION": {
+      "type": "number",
+      "required": true
+    },
+    "TagId": {
+      "type": "number",
+      "required": true
+    },
+    "Activo": {
+      "type": "number",
+      "required": true
+    },
+    "idUnidad": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

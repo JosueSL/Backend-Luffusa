@@ -1,0 +1,45 @@
+{
+  "name": "disponibilidad",
+  "plural": "disponibilidad",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "Fecha": {
+      "type": "date",
+      "required": true
+    },
+    "fdDiario": {
+      "type": "number",
+      "required": true
+    },
+    "fdMensual": {
+      "type": "number",
+      "required": true
+    },
+    "fdAnual": {
+      "type": "number",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

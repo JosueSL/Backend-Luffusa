@@ -1,0 +1,38 @@
+{
+  "name": "DataLog2",
+  "plural": "DataLog2",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "number",
+      "id": true
+    },
+    "Value": {
+      "type": "number"
+    },
+    "SourceID": {
+      "type": "number"
+    },
+    "QuantityID": {
+      "type": "number"
+    },
+    "TimestampUTC": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

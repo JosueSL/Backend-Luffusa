@@ -1,0 +1,203 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "datos": {
+    "dataSource": "db",
+    "public": true
+  },
+  "maquina": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tag": {
+    "dataSource": "db",
+    "public": true
+  },
+  "empleado": {
+    "dataSource": "db",
+    "public": true
+  },
+  "getuser": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tipo_usuario": {
+    "dataSource": "db",
+    "public": true
+  },
+  "unidad": {
+    "dataSource": "db",
+    "public": true
+  },
+  "medidor": {
+    "dataSource": "db",
+    "public": true
+  },
+  "datosmanual": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Quantity": {
+    "dataSource": "SQL",
+    "public": true
+  },
+  "Source": {
+    "dataSource": "SQL",
+    "public": true
+  },
+  "DataLog2": {
+    "dataSource": "SQL",
+    "public": true
+  },
+  "cargo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "heatrate": {
+    "dataSource": "db",
+    "public": true
+  },
+  "heatrateconfig": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tanque": {
+    "dataSource": "db",
+    "public": true
+  },
+  "datostanque": {
+    "dataSource": "db",
+    "public": true
+  },
+  "booster": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tipocombustible": {
+    "dataSource": "db",
+    "public": true
+  },
+  "datosbooster": {
+    "dataSource": "db",
+    "public": true
+  },
+  "capacidadhora": {
+    "dataSource": "db",
+    "public": true
+  },
+  "capacidaddeclarada": {
+    "dataSource": "db",
+    "public": true
+  },
+  "transferencia": {
+    "dataSource": "db",
+    "public": true
+  },
+  "responsable": {
+    "dataSource": "db",
+    "public": true
+  },
+  "datosboostercec": {
+    "dataSource": "db",
+    "public": true
+  },
+  "opcion": {
+    "dataSource": "db",
+    "public": true
+  },
+  "consumodescarga": {
+    "dataSource": "db",
+    "public": true
+  },
+  "serviciopropio": {
+    "dataSource": "db",
+    "public": true
+  },
+  "energiaunidad": {
+    "dataSource": "db",
+    "public": true
+  },
+  "comunes": {
+    "dataSource": "db",
+    "public": true
+  },
+  "lhv": {
+    "dataSource": "db",
+    "public": true
+  },
+  "energiamaquina": {
+    "dataSource": "db",
+    "public": true
+  },
+  "energiagrupo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tagbymaquina": {
+    "dataSource": "db",
+    "public": true
+  },
+  "falla": {
+    "dataSource": "db",
+    "public": true
+  },
+  "eventos": {
+    "dataSource": "db",
+    "public": true
+  },
+  "disponibilidad": {
+    "dataSource": "db",
+    "public": true
+  },
+  "turno": {
+    "dataSource": "db",
+    "public": true
+  },
+  "datosaceite": {
+    "dataSource": "db",
+    "public": true
+  },
+  "datosptermica": {
+    "dataSource": "db",
+    "public": true
+  },
+  "nivelaceite": {
+    "dataSource": "db",
+    "public": true
+  }
+}

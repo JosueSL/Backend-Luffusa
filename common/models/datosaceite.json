@@ -1,0 +1,61 @@
+{
+  "name": "datosaceite",
+  "plural": "datosaceite",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "descripcion": {
+      "type": "number",
+      "required": true
+    },
+    "cm": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "ni": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "ndd": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "ndt": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "comentario": {
+      "type": "string",
+      "default": "N/A"
+    },
+    "idMaquina": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

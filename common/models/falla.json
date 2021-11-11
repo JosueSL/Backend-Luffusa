@@ -1,0 +1,71 @@
+{
+  "name": "falla",
+  "plural": "falla",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "Fecha": {
+      "type": "date",
+      "required": true
+    },
+    "HrsRepEnee": {
+      "type": "number",
+      "required": true
+    },
+    "HrsRepLuf": {
+      "type": "number",
+      "required": true
+    },
+    "HrsFallaElec": {
+      "type": "number",
+      "required": true
+    },
+    "HrsFallaMec": {
+      "type": "number",
+      "required": true
+    },
+    "HrsFallaAux": {
+      "type": "number",
+      "required": true
+    },
+    "HrsManttoProgram": {
+      "type": "number",
+      "required": true
+    },
+    "Eventos": {
+      "type": "string",
+      "required": true,
+      "default": "-"
+    },
+    "ParoMantto": {
+      "type": "number",
+      "required": true
+    },
+    "Observacion": {
+      "type": "string",
+      "required": true,
+      "default": "-"
+    },
+    "idMaquina": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
